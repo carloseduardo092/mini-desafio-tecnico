@@ -80,7 +80,8 @@ O foco é layout, navegação, organização de código e experiência do usuár
 
 Clone o repositório:
 
-git clone https://github.com/seu-usuario/nome-do-repo
+git clone https://github.com/carloseduardo092/mini-desafio-tecnico/
+
 
 
 Instale as dependências:
