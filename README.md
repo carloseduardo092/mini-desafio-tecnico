@@ -149,7 +149,11 @@ Não projetada para uso em dispositivos móveis
 Layout desktop estável e consistente
 
 ▶️ Como Rodar o Projeto
+
+
 npm install
+
+
 npm run dev
 
 
