@@ -1,0 +1,25 @@
+/* ===== Cards ===== */
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #e5e7eb;
+}
+
+.card-title {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.card-value {
+  font-size: 24px;
+  margin-top: 8px;
+  display: block;
+}

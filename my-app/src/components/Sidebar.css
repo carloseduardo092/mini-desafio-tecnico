@@ -1,0 +1,30 @@
+/* ===== Sidebar ===== */
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  background-color: #0f172a;
+  color: #fff;
+  padding: 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+.logo {
+  margin-bottom: 30px;
+  font-size: 22px;
+}
+
+.menu a {
+  display: block;
+  color: #cbd5e1;
+  text-decoration: none;
+  margin-bottom: 12px;
+  padding: 8px;
+  border-radius: 6px;
+}
+
+.menu a:hover {
+  background-color: #1e293b;
+  color: #fff;
+}

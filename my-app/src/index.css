@@ -1,0 +1,330 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f6f8;
+}
+/* ===== Login ===== */
+button {
+  cursor: pointer;
+}
+
+.login-page {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f1f5f9;
+}
+h2 {
+  text-align: center;
+}
+
+.login-box {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 320px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2px solid #2563eb;
+}
+
+.login-box input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 12px;
+}
+
+.login-box button {
+  width: 100%;
+  margin-top: 16px;
+  padding: 10px;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+}
+
+/* ===== Content ===== */
+.content {
+  padding: 20px;
+}
+
+/* ===== Inbox ===== */
+
+.inbox-container {
+  display: grid;
+  grid-template-columns: 420px 1fr;
+  gap: 20px;
+}
+
+.email-list {
+  margin-top: 20px;
+}
+
+.email-item {
+  background: #fff;
+  border: 1px solid #e5e7eb;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.email-item:hover {
+  background: rgba(0, 0, 0, 0.03);
+  transform: translateY(-2px);
+}
+
+/* Dark mode */
+.dark .email-item {
+  background: #1f2933;
+  border-color: #374151;
+}
+
+.dark .email-item:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.email-item p {
+  margin: 4px 0 0;
+  color: #374151;
+}
+
+.dark .email-item p {
+  color: #d1d5db;
+}
+
+.pedido {
+  margin-left: 10px;
+  color: #6b7280;
+  font-size: 12px;
+}
+
+.status {
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  text-transform: capitalize;
+}
+
+.status.novo {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.status.respondido {
+  background: #dcfce7;
+  color: #166534;
+}
+.email-actions {
+  margin-top: 16px;
+  display: flex;
+  gap: 10px;
+}
+
+/* Thread */
+
+.email-thread {
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.message {
+  margin-top: 10px;
+}
+
+.message.agent {
+  text-align: right;
+}
+
+/* Responsivo */
+
+@media (max-width: 768px) {
+  .inbox-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== Pedido ===== */
+
+.order-info {
+  background: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  margin-bottom: 20px;
+}
+.email-history {
+  margin-top: 12px;
+  padding-left: 16px;
+}
+
+.email-history li {
+  margin-bottom: 6px;
+  color: inherit;
+}
+
+/* ===== Botões ===== */
+.btn-primary {
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.btn-secondary {
+  background: #e5e7eb;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+}
+
+/* ===== Configurações ===== */
+.settings-box {
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+  max-width: 420px;
+}
+
+.settings-box label {
+  display: block;
+  margin-bottom: 14px;
+}
+
+.settings-box input {
+  width: 80%;
+  margin-top: 6px;
+  margin-right: 20px;
+  padding: 8px;
+}
+
+/* Dark mode */
+.dark .refund-item {
+  background: #0f172a;
+  border-color: #1e293b;
+}
+
+@media (max-width: 768px) {
+  .refund-item {
+    grid-template-columns: 1fr;
+    text-align: left;
+  }
+
+  .refund-item button {
+    width: 100%;
+  }
+}
+.layout-content {
+  margin-left: 220px;
+  min-height: 100vh;
+}
+
+/* ===== Dark Mode ===== */
+body.dark {
+  background: #020617;
+  color: #e5e7eb;
+}
+
+/* Login Dark */
+body.dark .login-page {
+  background: #020617;
+}
+
+body.dark .login-box {
+  background: #0f172a;
+}
+
+body.dark .login-box input {
+  background: #020617;
+  color: #e5e7eb;
+  border: 1px solid #1e293b;
+}
+
+body.dark .login-box button {
+  background: #3b82f6;
+}
+
+body.dark .header {
+  background: #020617;
+  border-bottom: 1px solid #1e293b;
+}
+
+body.dark .store-name {
+  color: #f8fafc;
+}
+
+body.dark .header button {
+  color: #e5e7eb;
+}
+
+body.dark .sidebar {
+  background: #020617;
+}
+
+body.dark .menu a {
+  color: #94a3b8;
+}
+
+body.dark .menu a:hover {
+  background: #1e293b;
+  color: #f8fafc;
+}
+
+body.dark main,
+body.dark .content {
+  color: #e5e7eb;
+}
+
+body.dark .card {
+  background: #0f172a;
+  border-color: #1e293b;
+}
+
+body.dark .card-title {
+  color: #94a3b8;
+}
+
+body.dark .card-value {
+  color: #f8fafc;
+}
+
+body.dark .email-item {
+  background: #0f172a;
+  border-color: #1e293b;
+}
+
+body.dark .email-item p {
+  color: #cbd5f5;
+}
+.dark .email-history li {
+  color: #d1d5db;
+}
+
+body.dark .modal {
+  background: #020617;
+  color: #e5e7eb;
+}
+
+body.dark .order-info,
+body.dark .settings-box {
+  background: #0f172a;
+  border-color: #1e293b;
+}

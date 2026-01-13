@@ -1,111 +1,174 @@
-  SaaS Dashboard — Frontend UI (Mock)
+📊 Mini Desafio Técnico — Painel Administrativo (Frontend)
 
-Projeto frontend desenvolvido com foco exclusivamente visual, simulando um painel SaaS B2B para gestão de e-mails, pedidos e refunds.
-Não possui backend, autenticação real ou integrações externas.
+Este projeto é um painel administrativo (Dashboard SaaS) desenvolvido como parte de um desafio técnico frontend, com foco em interface, organização visual e experiência do usuário, conforme especificado no PDF do desafio.
 
- Visão Geral
+O sistema simula a gestão de e-mails, pedidos e solicitações de refund, utilizando dados mockados, sem integração com backend.
 
-A aplicação simula a interface de um sistema SaaS integrado a e-commerce, permitindo:
-
-Visualizar e-mails de clientes
-
-Consultar pedidos
-
-Solicitar refunds (apenas visual)
-
-Configurar e-mail do aplicativo
-
-Todos os dados são mockados, utilizados apenas para demonstração de UI/UX.
-
-   Tecnologias Utilizadas
+🚀 Tecnologias Utilizadas
 
 React
 
 TypeScript
 
-Vite
+React Router DOM
 
 CSS puro
 
-React Router DOM
+Vite
 
- Estrutura do Projeto
-src/
- ├─ components/        # Componentes reutilizáveis
- ├─ pages/             # Telas principais
- ├─ data/              # Mock data
- ├─ App.tsx            # Rotas da aplicação
- ├─ main.tsx           # Entrada do React
- └─ index.css          # Estilos globais
+🎯 Objetivo do Projeto
 
-   Telas Implementadas
+Construir a interface visual completa de um painel administrativo, contemplando:
 
-Login
+Estrutura de layout
 
-Dashboard
+Componentização
 
-Cards de resumo
+Navegação entre telas
+
+Experiência visual (UX)
+
+Código organizado e legível
+
+⚠️ Observação importante
+O desafio tem foco exclusivo em frontend/UI.
+Não foi exigida a implementação de regras de negócio ou backend.
+
+🖥️ Abordagem de Layout
+
+Projeto desenvolvido com foco Desktop-first
+
+Layout otimizado para telas grandes
+
+Sidebar fixa
+
+Header persistente
+
+📌 Nota:
+A aplicação foi pensada para uso em desktop, conforme o escopo do desafio.
+A responsividade para dispositivos móveis não é o foco principal desta entrega.
+
+✅ Funciona corretamente em resoluções desktop
+
+🔐 Tela de Login
+
+Campo de e-mail
+
+Campo de senha
+
+Botão de acesso
+
+Interface simples e objetiva
+
+📈 Dashboard
+
+Sidebar com navegação:
 
 Inbox
 
-Lista de e-mails mockados
+Pedidos
 
-Detalhes do Pedido
-
-Informações do pedido
-
-Modal de solicitação de refund
+Refunds
 
 Configurações
 
-Configuração de e-mail do aplicativo
+Header com nome da loja e avatar
 
- Importante
+Cards de resumo com dados mockados
 
-Este projeto não implementa:
+📥 Inbox de E-mails
 
-Backend
+Lista de e-mails com:
 
-Autenticação real
+Nome do cliente
 
-Integração com APIs
+Pedido relacionado
 
-Persistência de dados
+Assunto
 
-Validações reais
+Status (novo / respondido)
 
-O foco é layout, navegação, organização de código e experiência do usuário.
+Visualização de thread ao selecionar um e-mail
 
- Como Rodar o Projeto
+Ações disponíveis (UI):
 
-Clone o repositório:
+Responder
 
-git clone https://github.com/carloseduardo092/mini-desafio-tecnico/
+Excluir
 
+Traduzir
 
+Enviar resposta
 
-Instale as dependências:
+As ações são apenas visuais, conforme o escopo do desafio.
 
+📦 Tela de Pedido
+
+ID do pedido
+
+Cliente
+
+Valor
+
+Status
+
+Histórico visual de e-mails
+
+Botão para solicitar refund
+
+💸 Modal de Refund
+
+Seleção do motivo
+
+Checkboxes
+
+Campo de observações
+
+Botões de ação
+
+⚙️ Configurações
+
+Campos para configuração de e-mail da aplicação
+
+Interface simples e clara
+
+🌙 Dark Mode
+
+Alternância entre tema claro e escuro
+
+Aplicado em todas as telas
+
+Mantém legibilidade no desktop
+
+📱 Responsividade
+
+Interface otimizada para desktop
+
+Não projetada para uso em dispositivos móveis
+
+Layout desktop estável e consistente
+
+▶️ Como Rodar o Projeto
 npm install
-
-
-Execute o projeto:
-
 npm run dev
 
 
-Acesse no navegador:
+Acesse:
 
 http://localhost:5173
 
- Decisões de UI/UX
+📝 Considerações Finais
 
-Layout inspirado em dashboards SaaS B2B
+Projeto entregue conforme o escopo do desafio
 
-Sidebar fixa para navegação rápida
+Foco em UI e estrutura visual
 
-Hierarquia visual clara
+Dados mockados
 
-Componentes simples e reutilizáveis
+Código organizado
 
-Design limpo e funcional
+Pronto para evolução futura com backend e responsividade, se necessário
+
+👩‍💻 Desenvolvido por
+
+Carlos eduardo da cruz mascarenhas junior.
